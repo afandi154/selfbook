@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Container isi data -->
+    <div class="container form-container">
+      <h1 class="title">Isi Data</h1>
+
+      <div class="flex">
+        <label for="judulBuku"> Judul Buku </label>
+        <div class="input">
+          <input type="text" id="judulBuku" />
+          <span id="warn-judulBuku" style="display: none; color: red"
+            >*Judul tidak boleh kosong</span
+          >
+        </div>
+      </div>
+
+      <div class="flex">
+        <label for="penulisBuku"> Penulis </label>
+        <div class="input">
+          <input type="text" id="penulisBuku" />
+          <span id="warn-penulisBuku" style="display: none; color: red"
+            >*Judul tidak boleh kosong</span
+          >
+        </div>
+      </div>
+
+      <label class="checkbox">
+        <input type="checkbox" id="tanda" value="sudah dibaca" /> Tandai sudah
+        dibaca
+      </label>
+      <button id="submit">Tambah Buku</button>
+    </div>
+
+    <!-- Container search -->
+    <div class="container form-search">
+      <input
+        type="text"
+        id="search"
+        placeholder="search judul / penulis"
+        style="flex-grow: 1"
+      />
+      <button id="btnSearch">Cari</button>
+    </div>
+
+    <!-- Container Bookself -->
+    <div class="container">
+      <h2>Unfinished Books</h2>
+      <div id="unFinisedBooks"></div>
+    </div>
+    <div class="container">
+      <h2>Finshed Books</h2>
+      <div id="finisedBooks"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
